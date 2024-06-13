@@ -108,7 +108,7 @@
                      <children>
                         <BorderPane prefHeight="129.0" prefWidth="295.0" translateY="50.0">
                            <center>
-                              <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" prefWidth="212.0" text="Welcome to Tic Tac Toe!" textAlignment="CENTER" translateY="-20.0" BorderPane.alignment="CENTER">
+                              <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" prefWidth="212.0" text="Welcome to Tic-tac-toe!" textAlignment="CENTER" translateY="-20.0" BorderPane.alignment="CENTER">
                                  <font>
                                     <Font size="18.0" />
                                  </font>

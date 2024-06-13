@@ -90,7 +90,7 @@ public class Controller
     public void start(Stage window) throws Exception
     {
         Parent root = FXMLLoader.load(getClass().getResource("ticTacToe.fxml"));
-        window.setTitle("Tic Tac Toe");
+        window.setTitle("Tic-tac-toe");
         window.setScene(new Scene(root, 1000, 650));
         window.show();
 

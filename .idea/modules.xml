@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CSINTSY-MCO2_final.iml" filepath="$PROJECT_DIR$/CSINTSY-MCO2_final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tic-tac-toe-game.iml" filepath="$PROJECT_DIR$/tic-tac-toe-game.iml" />
     </modules>
   </component>
 </project>

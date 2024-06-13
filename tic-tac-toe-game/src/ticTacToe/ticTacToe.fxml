@@ -143,17 +143,17 @@
                               </Label>
                            </center>
                         </BorderPane>
-                        <Button fx:id="lvl0" disable="true" mnemonicParsing="false" onAction="#lvlsPress" text="Level 0" translateX="107.0">
+                        <Button fx:id="lvl1" disable="true" mnemonicParsing="false" onAction="#lvlsPress" text="Level 1" translateX="107.0">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Button>
-                        <Button fx:id="lvl1" disable="true" layoutX="10.0" layoutY="33.0" mnemonicParsing="false" onAction="#lvlsPress" text="Level 1" translateX="107.0" translateY="10.0">
+                        <Button fx:id="lvl2" disable="true" layoutX="10.0" layoutY="33.0" mnemonicParsing="false" onAction="#lvlsPress" text="Level 2" translateX="107.0" translateY="10.0">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Button>
-                        <Button fx:id="lvl2" disable="true" layoutX="10.0" layoutY="65.0" mnemonicParsing="false" onAction="#lvlsPress" text="Level 2" translateX="107.0" translateY="20.0">
+                        <Button fx:id="lvl3" disable="true" layoutX="10.0" layoutY="65.0" mnemonicParsing="false" onAction="#lvlsPress" text="Level 3" translateX="107.0" translateY="20.0">
                            <font>
                               <Font size="16.0" />
                            </font>

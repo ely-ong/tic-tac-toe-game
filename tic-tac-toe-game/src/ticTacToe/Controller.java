@@ -35,16 +35,16 @@ public class Controller
     public Button human;
     public Button cpu;
     public Label selectLvl;
-    public Button lvl0;
     public Button lvl1;
     public Button lvl2;
+    public Button lvl3;
 
     public static boolean playerTurn;
     public static String playerMark;
     public static String cpuMark;
-    public boolean lvl0Mode;
     public boolean lvl1Mode;
     public boolean lvl2Mode;
+    public boolean lvl3Mode;
 
     public static boolean playerWin;
     public static boolean cpuWin;
@@ -116,9 +116,9 @@ public class Controller
         cpu.setDisable(true);
 
         selectLvl.setDisable(false);
-        lvl0.setDisable(false);
         lvl1.setDisable(false);
         lvl2.setDisable(false);
+        lvl3.setDisable(false);
 
     }
 
@@ -135,10 +135,6 @@ public class Controller
 
         switch (btn.getText())
         {
-            case "Level 0":
-                disableOptions(0);
-                lvl0Mode = true;
-                break;
             case "Level 1":
                 disableOptions(1);
                 lvl1Mode = true;
@@ -146,6 +142,10 @@ public class Controller
             case "Level 2":
                 disableOptions(2);
                 lvl2Mode = true;
+                break;
+            case "Level 3":
+                disableOptions(3);
+                lvl3Mode = true;
         }
 
         if(!playerTurn)
@@ -160,14 +160,14 @@ public class Controller
      */
     public void cpuMove()
     {
-        if(lvl0Mode)
-            lvl0Move();
-
-        else if(lvl1Mode)
+        if(lvl1Mode)
             lvl1Move();
 
         else if(lvl2Mode)
             lvl2Move();
+
+        else if(lvl3Mode)
+            lvl3Move();
     }
 
     /** disables options after setup
@@ -178,9 +178,9 @@ public class Controller
     {
         selectLvl.setText("Level "+lvl+" selected.");
 
-        lvl0.setDisable(true);
         lvl1.setDisable(true);
         lvl2.setDisable(true);
+        lvl3.setDisable(true);
     }
 
     /** changes welcome message to notify of player colors
@@ -277,10 +277,10 @@ public class Controller
             nextTurn();
     }
 
-    /** makes cpu player perform move for Lvl 0
+    /** makes cpu player perform move for Lvl 1
      */
     @FXML
-    public void lvl0Move()
+    public void lvl1Move()
     {
         Random random = new Random();
         int num=-1;
@@ -412,9 +412,9 @@ public class Controller
         return 0;
     }
 
-    /** makes cpu player perform move for Lvl 1
+    /** makes cpu player perform move for Lvl 2
      */
-    public void lvl1Move()
+    public void lvl2Move()
     {
         int[] availMoves = getAvailMoves();
         int num = -1;
@@ -565,9 +565,9 @@ public class Controller
         }
     }
 
-    /** makes cpu player perform move for Lvl 2
+    /** makes cpu player perform move for Lvl 3
      */
-    public void lvl2Move() {
+    public void lvl3Move() {
         int bestNum = Integer.MAX_VALUE, score, bestBtn = 0;
         int[] availMoves = getAvailMoves(); //array containing tile numbers that are blank
         boolean tempTurn = playerTurn;

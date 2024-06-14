@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.MenuItem;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.control.*;
 import java.util.Random;
@@ -105,10 +106,12 @@ public class Controller
     {
         Button btn = (Button) e.getSource();
 
-        playerTurn = btn.getText().equals("Human");
+        playerTurn = btn.getText().equals("You");
 
         firstMessage();
-        selectFirst.setDisable(true);
+//        selectFirst.setDisable(true);
+        selectFirst.setVisible(false);
+        selectFirst.setManaged(false);
         pickMark();
         changeMessage();
 
@@ -187,7 +190,11 @@ public class Controller
      */
     private void changeMessage()
     {
-        status.setText("Opponent's color is RED.\nYour color is BLUE.\n\n"+firstMessage());
+        String humanColor = "BLUE";
+
+        String cpuColor = "RED";
+
+        status.setText("Your color is " + humanColor + ".\nOpponent's color is " + cpuColor +".\n\n"+firstMessage());
     }
 
     /** gets the string corresponding to the mark of the winning player, if existing

@@ -6,6 +6,8 @@ A single-player game of tic-tac-toe.
 
 The game logic and mechanics were implemented using Java, while the GUI was built using JavaFX.
 
+<img src="https://github.com/ely-ong/tic-tac-toe-game/blob/master/tic-tac-toe-game/images/tic-tac-toe_main.png" width="80%" height="80%">
+
 ## Installation
 1. Ensure that Java is installed in your local device by downloading the installer [here](https://www.oracle.com/ph/java/technologies/downloads/) and following the instructions.
    - *Note: You need to download at least **JDK 15** to run the game application.*
@@ -23,16 +25,24 @@ The game logic and mechanics were implemented using Java, while the GUI was buil
 1. Select the player to go first.
    - **You** : The human player will move first.
    - **Computer** : The opponent will move first.
+
+   <img src="https://github.com/ely-ong/tic-tac-toe-game/blob/master/tic-tac-toe-game/images/select_player.png" width="30%" height="30%">
   
 1. Select your desired level.
    - **Level 1** : The opponent is new to playing the game.
    - **Level 2** : The opponent has some idea on how to play the game.
    - **Level 3** : The opponent is a tic-tac-toe master.
+
+   <img src="https://github.com/ely-ong/tic-tac-toe-game/blob/master/tic-tac-toe-game/images/select_lvl.png" width="30%" height="30%">
      
 1. During your turn, click on a blank square in the grid to place your mark.
 
 ## Starting a New Game
 1. To start a new game, select `Options` > `New Game`.
+   
+   <img src="https://github.com/ely-ong/tic-tac-toe-game/blob/master/tic-tac-toe-game/images/new_game.png" width="30%" height="30%">
 
 ## Quit Game
 1. To quit the game applicaiton, select `Options` > `Quit`.
+
+   <img src="https://github.com/ely-ong/tic-tac-toe-game/blob/master/tic-tac-toe-game/images/quit.png" width="30%" height="30%">

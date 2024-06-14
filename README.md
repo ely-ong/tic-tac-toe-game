@@ -36,6 +36,8 @@ The game logic and mechanics were implemented using Java, while the GUI was buil
    <img src="https://github.com/ely-ong/tic-tac-toe-game/blob/master/tic-tac-toe-game/images/select_lvl.png" width="30%" height="30%">
      
 1. During your turn, click on a blank square in the grid to place your mark.
+   
+1. The first player to form a row or column of three consecutive marks wins the game. Have fun!
 
 ## Starting a New Game
 1. To start a new game, select `Options` > `New Game`.
